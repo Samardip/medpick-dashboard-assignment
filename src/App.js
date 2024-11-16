@@ -12,10 +12,10 @@ function App() {
 
   return (
     <div className='flex'>
-      <div className='w-1/6 px-8 py-[30px] min-h-[100vh]'>
+      <div className='w-1/6 px-8 py-[30px] h-[100vh]'>
         <Sidebar />
       </div>
-      <div className='w-5/6 bg-gray-100'>
+      <div className='w-5/6 bg-gray-100 h-[100vh] overflow-y-scroll'>
         <Navbar />
         <div className='flex'>
           <div className='flex flex-col  h-[100%] w-[65%] '>
