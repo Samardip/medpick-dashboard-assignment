@@ -4,7 +4,7 @@ import { BarChart } from '@mui/x-charts/BarChart';
 export default function ChartsOverviewDemo() {
     let dark = false;
     return (
-        <div className="py-4 px-6 bg-white rounded-[8px] shadow-sm">
+        <div className="py-4 px-6 bg-white rounded-[8px]">
             <BarChart
                 series={[
                     {

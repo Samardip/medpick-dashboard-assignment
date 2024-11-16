@@ -1,3 +1,4 @@
+import { Circle } from '@mui/icons-material';
 import './App.css';
 import BarChartGraph from './component/barChart/barChart';
 import { CardStat } from './component/cardStat/cardStat';
@@ -20,7 +21,20 @@ function App() {
           <div className='flex flex-col  h-[100%] w-[65%] '>
             <OrderSummary />
             <div className="py-4 px-6 m-[35px] mt-[25px] !bg-white rounded-[8px] shadow-sm h-[100%]">
+              <div className='font-bold text-md mb-8 px-8 pt-8'>
+                Analytics
+              </div>
               <BarChartGraph />
+              <div className='flex justify-center items-center gap-4'>
+                <div className='flex justify-center items-center gap-2'>
+                  <div className='flex justify-center items-center'><Circle className='!w-[15px] !h-[15px] text-custom-blue'/></div>
+                  <div className='font-semibold'>Total order recieved</div>
+                </div>
+                <div className='flex justify-center items-center gap-2'>
+                  <div className='flex justify-center items-center'><Circle className='!w-[15px] !h-[15px] text-custom-orange'/></div>
+                  <div className='font-semibold'>Order approval pending</div>
+                </div>
+              </div>
             </div>
             <div></div>
           </div>
