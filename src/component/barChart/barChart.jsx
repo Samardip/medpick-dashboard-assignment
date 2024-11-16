@@ -70,7 +70,7 @@ export default function ChartsOverviewDemo() {
                             'Sunday',
                         ],
                         scaleType: 'band',
-                        categoryGapRatio: 0.7,
+                        categoryGapRatio: 0.5,
                         barGapRatio: 0.5
                     },
                 ]}
