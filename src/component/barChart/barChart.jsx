@@ -3,7 +3,7 @@ import { BarChart } from '@mui/x-charts/BarChart';
 
 export default function BarChartGraph() {
     let dark = false;
-    const yAxisLevels = [10, 20, 30]; // Adjust levels as needed
+    const yAxisLevels = [0,5,10,15,20,25]; // Adjust levels as needed
 
     return (
         <div className="py-4 px-6 bg-white rounded-[8px]" style={{ position: 'relative', height: '300px' }}>
@@ -13,14 +13,14 @@ export default function BarChartGraph() {
                         key={index}
                         style={{
                             position: 'absolute',
-                            top: `${100 - (level / 45) * 100 - 18}%`, // Position based on y-axis range
+                            top: `${100 - (level / 40) * 100 -30}%`, 
                             // left: 0,
                             // right: 0,
                             width: '80%',
                             zIndex: 0,
                             height: '1px',
                             backgroundColor: dark ? 'grey' : '#E0E0E0',
-                            opacity: 0.5, // Slight opacity for a subtle effect
+                            opacity: 0.5,
                         }}
                     />
                 ))}
