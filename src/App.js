@@ -21,7 +21,7 @@ function App() {
           <div className='flex flex-col  h-[100%] w-[65%] '>
             <OrderSummary />
             <div className="py-4 px-6 m-[35px] mt-[25px] !bg-white rounded-[8px] shadow-sm h-[100%]">
-              <div className='font-bold text-md mb-8 px-8 pt-8'>
+              <div className='font-bold text-md mb-2 px-8 pt-2'>
                 Analytics
               </div>
               <BarChartGraph />

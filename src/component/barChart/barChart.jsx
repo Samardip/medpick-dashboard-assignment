@@ -3,12 +3,32 @@ import { BarChart } from '@mui/x-charts/BarChart';
 
 export default function ChartsOverviewDemo() {
     let dark = false;
+    const yAxisLevels = [10, 20, 30]; // Adjust levels as needed
+
     return (
-        <div className="py-4 px-6 bg-white rounded-[8px]">
+        <div className="py-4 px-6 bg-white rounded-[8px]" style={{ position: 'relative', height: '300px' }}>
+             <div className='flex flex-col justify-center items-center m-auto'>
+                {yAxisLevels.map((level, index) => (
+                    <div
+                        key={index}
+                        style={{
+                            position: 'absolute',
+                            top: `${100 - (level / 45) * 100 - 18}%`, // Position based on y-axis range
+                            // left: 0,
+                            // right: 0,
+                            width: '80%',
+                            zIndex: 0,
+                            height: '1px',
+                            backgroundColor: dark ? 'grey' : '#E0E0E0',
+                            opacity: 0.5, // Slight opacity for a subtle effect
+                        }}
+                    />
+                ))}
+            </div>
             <BarChart
                 series={[
                     {
-                        data: [35, 44, 24, 34, 20, 30, 10],
+                        data: [13, 17, 6, 16, 11, 30,16, 22],
                         color: 'rgba(0, 149, 255, 1)',
                         barStyle: {
                             borderTopLeftRadius: '10px', // Top left corner radius
@@ -18,7 +38,7 @@ export default function ChartsOverviewDemo() {
                         strokeWidth: 10,
                     },
                     {
-                        data: [51, 6, 49, 30, 15, 24, 29],
+                        data: [11, 10, 22, 7, 10, 14, 11],
                         color: 'rgba(243, 148, 30, 1)',
                         barStyle: {
                             borderTopLeftRadius: '10px', // Top left corner radius
