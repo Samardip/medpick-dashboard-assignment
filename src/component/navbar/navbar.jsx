@@ -4,7 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 export const Navbar = () => {
   return (
-    <div className="px-8 py-6 flex justify-between bg-white sticky top-0">
+    <div className="px-8 py-6 flex justify-between bg-white sticky top-0" style={{zIndex:1}}>
       <div className='flex items-center relative w-[65%]'>
         <SearchIcon className='absolute left-[7px] bottom-[14px] text-custom-orange' />
         <input
