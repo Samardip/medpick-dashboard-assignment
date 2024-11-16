@@ -42,7 +42,7 @@ export const Products = () => {
     ];
     return (
         <div className='flex flex-col w-[50%] bg-white mx-8 mt-2 mb-8  rounded-[8px] shadow-sm'>
-            <div className='font-bold text-md mb-8 px-8 pt-8'>
+            <div className='font-bold text-md mb-4 px-8 pt-4'>
                 Top Products
             </div>
             <div>
@@ -54,7 +54,7 @@ export const Products = () => {
                 </div>
                 {
                     dataArray?.map((item, index) => {
-                        return <div className='flex justify-start text-gray-500 font-semibold py-4 border-t border-t-gray-100 mx-8 mb-2'>
+                        return <div className='flex justify-start text-gray-500 font-semibold py-2 border-t border-t-gray-100 mx-8 mb-2'>
                             <div className='w-[8%]'>0{index + 1}</div>
                             <div className='w-[35%]'>{item?.name}</div>
                             <div className='flex justify-start items-center text-custom-transaction-text-blue w-[47%] pr-[40px]'><LinearBar progess={item?.popularity} barColor={item?.barColor} barBackground={item?.barBackground} /></div>
