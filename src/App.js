@@ -11,7 +11,7 @@ import { Transaction } from './component/transaction/transaction';
 function App() {
 
   return (
-    <div className='flex'>
+    <div className='flex overflow-hidden'>
       <div className='w-1/6 px-8 py-[30px] h-[100vh]'>
         <Sidebar />
       </div>

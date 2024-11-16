@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BarChart } from '@mui/x-charts/BarChart';
 
-export default function ChartsOverviewDemo() {
+export default function BarChartGraph() {
     let dark = false;
     const yAxisLevels = [10, 20, 30]; // Adjust levels as needed
 
@@ -28,7 +28,7 @@ export default function ChartsOverviewDemo() {
             <BarChart
                 series={[
                     {
-                        data: [13, 17, 6, 16, 11, 30,16, 22],
+                        data: [13, 17, 6, 16, 11,16, 22],
                         color: 'rgba(0, 149, 255, 1)',
                         barStyle: {
                             borderTopLeftRadius: '10px', // Top left corner radius
